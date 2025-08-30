@@ -13,17 +13,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const existing = await Prisma.contact.findUnique({
-      where: { email },
-    });
-
-    if (existing) {
-      return NextResponse.json(
-        { message: 'Email sudah terdaftar' },
-        { status: 400 }
-      );
-    }
-
     // simpan ke database
     const contact = await Prisma.contact.create({
       data: { name, email, pesan },
@@ -41,7 +30,7 @@ export async function POST(req: NextRequest) {
     });
 
     const mailOptions = {
-      from: `"Website Contact" <${process.env.SMTP_USER}>`,
+      from: `"Website Stikom" <${process.env.SMTP_USER}>`,
       to: process.env.RECEIVER_EMAIL,
       subject: 'Pesan Kontak Baru',
       text: `Nama: ${name}\nEmail: ${email}\nPesan: ${pesan}`,

@@ -24,7 +24,7 @@ export async function postContact(
   } catch (err) {
     const error = err as AxiosError<ContactResponse>;
     if (error.response) {
-      throw error.response.data; // balikan error dari server
+      throw error.response.data;
     }
     throw { message: 'Unknown error', success: false };
   }

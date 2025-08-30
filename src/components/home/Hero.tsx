@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-0 py-34 flex flex-col gap-6 text-white">
         {/* Subtitle / Moto */}
         <h4 className="text-xl md:text-2xl uppercase font-semibold tracking-wide">
-          Moto
+          Motto
         </h4>
 
         {/* Main Heading */}
@@ -23,7 +23,7 @@ export default function Hero() {
             onClick={() => route.push('/contact')}
             className="bg-blue-500 hover:bg-blue-600 transition-colors cursor-pointer text-white font-bold py-3 px-6 rounded-lg"
           >
-            Kontak
+            Hubungi Kami
           </button>
         </div>
       </div>

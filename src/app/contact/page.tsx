@@ -78,6 +78,8 @@ export default function Contact() {
           <h3 className="text-2xl font-semibold text-center mb-6">
             Kirim Pesan
           </h3>
+
+          {/* Form */}
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700">
