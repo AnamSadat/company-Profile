@@ -14,10 +14,7 @@ export default function News() {
         </p>
       </div>
 
-      {/* Search */}
       <ContentBerita />
-
-      {/* Daftar Berita */}
     </section>
   );
 }
