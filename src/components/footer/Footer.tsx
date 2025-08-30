@@ -23,29 +23,29 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-2">Navigasi</h3>
             <ul className="space-y-1 text-sm">
               <li>
-                <Link href="/" className="hover:text-yellow-400">
+                <Link href="/" className="hover:text-blue-600">
                   Beranda
                 </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-yellow-400">
+                <Link href="/about" className="hover:text-blue-600">
                   Tentang Kami
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/activities" className="hover:text-yellow-400">
+                <Link href="/activities" className="hover:text-blue-600">
                   Kegiatan
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/news" className="hover:text-yellow-400">
+                <Link href="/news" className="hover:text-blue-600">
                   Berita
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-yellow-400">
+                <Link href="/contact" className="hover:text-blue-600">
                   Kontak
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,15 +56,24 @@ export default function Footer() {
             <p className="text-sm">Telp: (021) 123456</p>
             <p className="text-sm">Email: info@sekolahabc.sch.id</p>
             <div className="flex justify-center md:justify-start gap-4 mt-3">
-              <a href="#" className="hover:text-yellow-400">
+              <Link
+                href="https://www.facebook.com/"
+                className="hover:text-blue-600"
+              >
                 Facebook
-              </a>
-              <a href="#" className="hover:text-yellow-400">
+              </Link>
+              <Link
+                href="https://www.instagram.com/"
+                className="hover:text-blue-600"
+              >
                 Instagram
-              </a>
-              <a href="#" className="hover:text-yellow-400">
+              </Link>
+              <Link
+                href="https://www.youtube.com/"
+                className="hover:text-blue-600"
+              >
                 YouTube
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Book, Cpu, Star, Briefcase } from 'lucide-react';
 export default function ProgramUnggulan() {
   return (
     <div className="container mx-auto py-30 text-white mb-20">
-      <div className="flex flex-col md:flex-row gap-12 md:gap-32">
+      <div className="flex flex-col md:flex-row gap-12 px-6 md:gap-32">
         <div className="max-w-2xl flex flex-col gap-6">
           <h3 className="text-2xl">Program Unggulan</h3>
           <h1 className="text-5xl font-bold">

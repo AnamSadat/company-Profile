@@ -20,15 +20,10 @@ export default function Navbar() {
 
   return (
     <nav className="w-full top-0 bg-white sticky shadow-md z-100">
-      <div className="container mx-auto flex items-center justify-between py-5 px-4">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4">
         {/* Logo / Title */}
         <div className="flex items-center gap-4">
-          <Image
-            src={'/logo-stikom.svg'}
-            alt="logo stikom"
-            width={45}
-            height={0}
-          />
+          <Image src={'/stikom.png'} alt="logo stikom" width={150} height={0} />
         </div>
 
         {/* Menu desktop */}

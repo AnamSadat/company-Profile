@@ -5,6 +5,10 @@ import { SchemaForm, type SchemaFormInput } from '@/validator/contact';
 import { postContact } from '@/lib/prisma/apiPrisma';
 import Swal from 'sweetalert2';
 
+interface ServerError {
+  message: string;
+}
+
 export default function Contact() {
   const {
     register,
@@ -34,11 +38,12 @@ export default function Contact() {
         icon: 'success',
       });
       reset();
-    } catch (err) {
-      console.error(err);
+    } catch (err: unknown) {
+      const error = err as ServerError;
+      console.error('Error: ', err);
       Swal.fire({
         title: 'Gagal mengirim',
-        text: `${err}`,
+        text: error.message || 'Terjadi kesalahan',
         icon: 'error',
       });
     }
@@ -128,7 +133,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition"
+              className="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition cursor-pointer"
             >
               {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
             </button>

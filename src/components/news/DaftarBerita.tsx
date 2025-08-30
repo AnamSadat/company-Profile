@@ -1,4 +1,3 @@
-import { Search } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -11,7 +10,7 @@ export default function ContentBerita() {
       date: '5–7 Juli 2021',
       description:
         'STIKOM Poltek Cirebon menyelenggarakan pelatihan dan workshop untuk pengembangan media pembelajaran berbasis Augmented Reality.',
-      image: '/luffy.jpg',
+      image: '/workshop.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
     {
@@ -20,7 +19,7 @@ export default function ContentBerita() {
       date: '24 Mei 2021',
       description:
         'Kegiatan belajar mengajar di STIKOM Poltek Cirebon dimulai kembali setelah libur Lebaran.',
-      image: '/luffy.jpg',
+      image: '/MasukKuliah.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
     {
@@ -29,7 +28,7 @@ export default function ContentBerita() {
       date: '26 Juli 2023',
       description:
         'Pendaftaran Beasiswa KIP-K untuk tahun ajaran 2023/2024 telah dibuka di STIKOM Poltek Cirebon.',
-      image: '/luffy.jpg',
+      image: '/kip.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
     {
@@ -38,7 +37,7 @@ export default function ContentBerita() {
       date: '26 Juli 2023',
       description:
         'Ujian Akhir Semester Praktikum untuk semester genap 2020/2021 akan diselenggarakan pada tanggal 26 Juli 2023.',
-      image: '/luffy.jpg',
+      image: '/uaspraktikum.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
     {
@@ -47,7 +46,7 @@ export default function ContentBerita() {
       date: '26 Juli 2023',
       description:
         'Ujian Akhir Semester untuk semester genap 2020/2021 akan diselenggarakan mulai tanggal 26 Juli 2023.',
-      image: '/luffy.jpg',
+      image: '/uas.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
     {
@@ -56,7 +55,7 @@ export default function ContentBerita() {
       date: '26 Juli 2023',
       description:
         'STIKOM Poltek Cirebon bekerja sama dengan SEAMOLEC menyelenggarakan Workshop Pengembangan Media Pembelajaran berbasis Augmented Reality (AR).',
-      image: '/luffy.jpg',
+      image: '/workshop2.png',
       link: 'https://www.stikompoltekcirebon.ac.id/v1/index.php',
     },
   ];
@@ -83,7 +82,7 @@ export default function ContentBerita() {
           filteredNews.map((news) => (
             <div
               key={news.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
+              className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1"
             >
               <Image
                 src={news.image}

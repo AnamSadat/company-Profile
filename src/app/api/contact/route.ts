@@ -31,19 +31,18 @@ export async function POST(req: NextRequest) {
 
     // konfigurasi nodemailer
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST, // contoh: smtp.gmail.com
+      host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
-      secure: false, // true kalau pakai 465
+      secure: false,
       auth: {
-        user: process.env.SMTP_USER, // email pengirim
-        pass: process.env.SMTP_PASS, // password atau app password
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
-    // isi email
     const mailOptions = {
       from: `"Website Contact" <${process.env.SMTP_USER}>`,
-      to: process.env.RECEIVER_EMAIL, // email penerima notifikasi
+      to: process.env.RECEIVER_EMAIL,
       subject: 'Pesan Kontak Baru',
       text: `Nama: ${name}\nEmail: ${email}\nPesan: ${pesan}`,
       html: `<p><strong>Nama:</strong> ${name}</p>

@@ -4,19 +4,19 @@ export default function EventTahunan() {
   const events = [
     {
       name: 'Ospek Mahasiswa Baru',
-      img: '/luffy.jpg',
+      img: '/kegiatan.png',
     },
     {
       name: 'Pekan Kreativitas Mahasiswa (PKM)',
-      img: '/luffy.jpg',
+      img: '/kegiatan5.png',
     },
     {
       name: 'Lomba Debat, Hackathon, Seminar Nasional',
-      img: '/luffy.jpg',
+      img: '/kegiatan3.png',
     },
     {
       name: 'Wisuda & Dies Natalis Kampus',
-      img: '/luffy.jpg',
+      img: '/kegiatan4.png',
     },
   ];
   return (
@@ -31,8 +31,8 @@ export default function EventTahunan() {
             <Image
               src={event.img}
               alt={event.name}
-              width={200}
-              height={200}
+              width={400}
+              height={0}
               className="mx-auto rounded-lg object-cover mb-3"
             />
             <p className="font-semibold">{event.name}</p>

@@ -4,15 +4,15 @@ export default function OrganisasiMahasiswa() {
   const organisasi = [
     {
       name: 'Badan Eksekutif Mahasiswa (BEM)',
-      img: '/luffy.jpg',
+      img: '/bem.png',
     },
     {
       name: 'Himpunan Mahasiswa Jurusan (HMJ)',
-      img: '/luffy.jpg',
+      img: '/hmj.png',
     },
     {
       name: 'Unit Kegiatan Mahasiswa (UKM) olahraga, seni, debat',
-      img: '/luffy.jpg',
+      img: '/ukm2.png',
     },
   ];
   return (
